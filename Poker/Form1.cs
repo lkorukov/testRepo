@@ -22,6 +22,7 @@ namespace Poker
         public static void SomeMethod()
         {
             Console.WriteLine("BLalalalblabalba");
+            System.Console.WriteLine("Added a line 1");
         }
 
         public Form1()
