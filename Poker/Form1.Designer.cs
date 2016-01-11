@@ -37,9 +37,9 @@
             this.bAdd = new System.Windows.Forms.Button();
             this.tbAdd = new System.Windows.Forms.TextBox();
             this.tbBotChips5 = new System.Windows.Forms.TextBox();
-            this.tbBotChips4 = new System.Windows.Forms.TextBox();
-            this.tbBotChips3 = new System.Windows.Forms.TextBox();
-            this.tbBotChips2 = new System.Windows.Forms.TextBox();
+            this.WhatIsUpp = new System.Windows.Forms.TextBox();
+            this.anotherNameBe = new System.Windows.Forms.TextBox();
+            this.someName = new System.Windows.Forms.TextBox();
             this.tbBotChips1 = new System.Windows.Forms.TextBox();
             this.tbPot = new System.Windows.Forms.TextBox();
             this.bOptions = new System.Windows.Forms.Button();
@@ -155,34 +155,34 @@
             this.tbBotChips5.TabIndex = 9;
             this.tbBotChips5.Text = "Chips : 0";
             // 
-            // tbBotChips4
+            // WhatIsUpp
             // 
-            this.tbBotChips4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbBotChips4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbBotChips4.Location = new System.Drawing.Point(970, 81);
-            this.tbBotChips4.Name = "tbBotChips4";
-            this.tbBotChips4.Size = new System.Drawing.Size(123, 23);
-            this.tbBotChips4.TabIndex = 10;
-            this.tbBotChips4.Text = "Chips : 0";
+            this.WhatIsUpp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.WhatIsUpp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.WhatIsUpp.Location = new System.Drawing.Point(970, 81);
+            this.WhatIsUpp.Name = "WhatIsUpp";
+            this.WhatIsUpp.Size = new System.Drawing.Size(123, 23);
+            this.WhatIsUpp.TabIndex = 10;
+            this.WhatIsUpp.Text = "Chips : 0";
             // 
-            // tbBotChips3
+            // anotherNameBe
             // 
-            this.tbBotChips3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbBotChips3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbBotChips3.Location = new System.Drawing.Point(755, 81);
-            this.tbBotChips3.Name = "tbBotChips3";
-            this.tbBotChips3.Size = new System.Drawing.Size(125, 23);
-            this.tbBotChips3.TabIndex = 11;
-            this.tbBotChips3.Text = "Chips : 0";
+            this.anotherNameBe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.anotherNameBe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.anotherNameBe.Location = new System.Drawing.Point(755, 81);
+            this.anotherNameBe.Name = "anotherNameBe";
+            this.anotherNameBe.Size = new System.Drawing.Size(125, 23);
+            this.anotherNameBe.TabIndex = 11;
+            this.anotherNameBe.Text = "Chips : 0";
             // 
-            // tbBotChips2
+            // someName
             // 
-            this.tbBotChips2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tbBotChips2.Location = new System.Drawing.Point(276, 81);
-            this.tbBotChips2.Name = "tbBotChips2";
-            this.tbBotChips2.Size = new System.Drawing.Size(133, 23);
-            this.tbBotChips2.TabIndex = 12;
-            this.tbBotChips2.Text = "Chips : 0";
+            this.someName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.someName.Location = new System.Drawing.Point(276, 81);
+            this.someName.Name = "someName";
+            this.someName.Size = new System.Drawing.Size(133, 23);
+            this.someName.TabIndex = 12;
+            this.someName.Text = "Chips : 0";
             // 
             // tbBotChips1
             // 
@@ -338,9 +338,9 @@
             this.Controls.Add(this.bOptions);
             this.Controls.Add(this.tbPot);
             this.Controls.Add(this.tbBotChips1);
-            this.Controls.Add(this.tbBotChips2);
-            this.Controls.Add(this.tbBotChips3);
-            this.Controls.Add(this.tbBotChips4);
+            this.Controls.Add(this.someName);
+            this.Controls.Add(this.anotherNameBe);
+            this.Controls.Add(this.WhatIsUpp);
             this.Controls.Add(this.tbBotChips5);
             this.Controls.Add(this.tbAdd);
             this.Controls.Add(this.bAdd);
@@ -370,9 +370,9 @@
         private System.Windows.Forms.Button bAdd;
         private System.Windows.Forms.TextBox tbAdd;
         private System.Windows.Forms.TextBox tbBotChips5;
-        private System.Windows.Forms.TextBox tbBotChips4;
-        private System.Windows.Forms.TextBox tbBotChips3;
-        private System.Windows.Forms.TextBox tbBotChips2;
+        private System.Windows.Forms.TextBox WhatIsUpp;
+        private System.Windows.Forms.TextBox anotherNameBe;
+        private System.Windows.Forms.TextBox someName;
         private System.Windows.Forms.TextBox tbBotChips1;
         private System.Windows.Forms.TextBox tbPot;
         private System.Windows.Forms.Button bOptions;

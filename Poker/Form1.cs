@@ -59,7 +59,7 @@ namespace Poker
         public Form1()
         {
             //bools.Add(PFturn); bools.Add(B1Fturn); bools.Add(B2Fturn); bools.Add(B3Fturn); bools.Add(B4Fturn); bools.Add(B5Fturn);
-            call = bb;
+            nameChanges = bb;
             MaximizeBox = false;
             MinimizeBox = false;
             Updates.Start();
@@ -70,15 +70,15 @@ namespace Poker
             tbPot.Enabled = false;
             tbChips.Enabled = false;
             tbBotChips1.Enabled = false;
-            tbBotChips2.Enabled = false;
-            tbBotChips3.Enabled = false;
-            tbBotChips4.Enabled = false;
+            someName.Enabled = false;
+            anotherNameBe.Enabled = false;
+            WhatIsUpp.Enabled = false;
             tbBotChips5.Enabled = false;
             tbChips.Text = "Chips : " + Chips.ToString();
             tbBotChips1.Text = "Chips : " + bot1Chips.ToString();
-            tbBotChips2.Text = "Chips : " + bot2Chips.ToString();
-            tbBotChips3.Text = "Chips : " + bot3Chips.ToString();
-            tbBotChips4.Text = "Chips : " + bot4Chips.ToString();
+            someName.Text = "Chips : " + bot2Chips.ToString();
+            anotherNameBe.Text = "Chips : " + bot3Chips.ToString();
+            WhatIsUpp.Text = "Chips : " + bot4Chips.ToString();
             tbBotChips5.Text = "Chips : " + bot5Chips.ToString();
             timer.Interval = (1 * 1 * 1000);
             timer.Tick += timer_Tick;
@@ -110,14 +110,15 @@ namespace Poker
             bool check = false;
             Bitmap backImage = new Bitmap("Assets\\Back\\Back.png");
             int horizontal = 580, vertical = 480;
-            Random r = new Random();
+            Random random = new Random();
             for (i = ImgLocation.Length; i > 0; i--)
             {
-                int j = r.Next(i);
+                int j = random.Next(i);
                 var k = ImgLocation[j];
                 ImgLocation[j] = ImgLocation[i - 1];
                 ImgLocation[i - 1] = k;
             }
+
             for (i = 0; i < 17; i++)
             {
 
@@ -1059,7 +1060,8 @@ namespace Poker
                             vf = true;
                         }
                     }
-                    if (Reserve[i + 1] % 4 != Reserve[i] % 4 && Reserve[i + 1] % 4 == f2[0] % 4)
+
+                    if (Reserve[i + 6] % 4 != Reserve[i] % 4 && Reserve[i + 1] % 4 == f2[0] % 4)
                     {
                         if (Reserve[i + 1] / 4 > f2.Max() / 4)
                         {
@@ -1771,19 +1773,19 @@ namespace Poker
                     if (CheckWinners.Contains("Bot 2"))
                     {
                         bot2Chips += int.Parse(tbPot.Text) / winners;
-                        tbBotChips2.Text = bot2Chips.ToString();
+                        someName.Text = bot2Chips.ToString();
                         //b2Panel.Visible = true;
                     }
                     if (CheckWinners.Contains("Bot 3"))
                     {
                         bot3Chips += int.Parse(tbPot.Text) / winners;
-                        tbBotChips3.Text = bot3Chips.ToString();
+                        anotherNameBe.Text = bot3Chips.ToString();
                         //b3Panel.Visible = true;
                     }
                     if (CheckWinners.Contains("Bot 4"))
                     {
                         bot4Chips += int.Parse(tbPot.Text) / winners;
-                        tbBotChips4.Text = bot4Chips.ToString();
+                        WhatIsUpp.Text = bot4Chips.ToString();
                         //b4Panel.Visible = true;
                     }
                     if (CheckWinners.Contains("Bot 5"))
@@ -2266,7 +2268,7 @@ namespace Poker
             Win.Clear();
             sorted.Current = 0;
             sorted.Power = 0;
-            string fixedLast = "qwerty";
+            string fixedLast = "qwertydadsadsa";
             if (!pStatus.Text.Contains("Fold"))
             {
                 fixedLast = "Player";
@@ -2383,9 +2385,9 @@ namespace Poker
         }
         private void TwoPair(ref int sChips, ref bool sTurn, ref bool sFTurn, Label sStatus, double botPower)
         {
-            Random rPair = new Random();
-            int rCall = rPair.Next(6, 11);
-            int rRaise = rPair.Next(6, 11);
+            Random randomPair = new Random();
+            int rCall = randomPair.Next(6, 11);
+            int rRaise = randomPair.Next(6, 11);
             if (botPower <= 290 && botPower >= 246)
             {
                 PH(ref sChips, ref sTurn, ref sFTurn, sStatus, rCall, 3, rRaise);
@@ -2743,15 +2745,15 @@ namespace Poker
             }
             if (bot2Chips <= 0)
             {
-                tbBotChips2.Text = "Chips : 0";
+                someName.Text = "Chips : 0";
             }
             if (bot3Chips <= 0)
             {
-                tbBotChips3.Text = "Chips : 0";
+                anotherNameBe.Text = "Chips : 0";
             }
             if (bot4Chips <= 0)
             {
-                tbBotChips4.Text = "Chips : 0";
+                WhatIsUpp.Text = "Chips : 0";
             }
             if (bot5Chips <= 0)
             {
@@ -2759,9 +2761,9 @@ namespace Poker
             }
             tbChips.Text = "Chips : " + Chips.ToString();
             tbBotChips1.Text = "Chips : " + bot1Chips.ToString();
-            tbBotChips2.Text = "Chips : " + bot2Chips.ToString();
-            tbBotChips3.Text = "Chips : " + bot3Chips.ToString();
-            tbBotChips4.Text = "Chips : " + bot4Chips.ToString();
+            someName.Text = "Chips : " + bot2Chips.ToString();
+            anotherNameBe.Text = "Chips : " + bot3Chips.ToString();
+            WhatIsUpp.Text = "Chips : " + bot4Chips.ToString();
             tbBotChips5.Text = "Chips : " + bot5Chips.ToString();
             if (Chips <= 0)
             {
@@ -3019,5 +3021,7 @@ namespace Poker
             height = this.Height;
         }
         #endregion
+
+        public int nameChanges { get; set; }
     }
 }
