@@ -8,3 +8,6 @@ D:\SOME TEST REPO\testRepo\Poker\obj\Debug\Poker.Properties.Resources.resources
 D:\SOME TEST REPO\testRepo\Poker\obj\Debug\Poker.csproj.GenerateResource.Cache
 D:\SOME TEST REPO\testRepo\Poker\obj\Debug\Poker.exe
 D:\SOME TEST REPO\testRepo\Poker\obj\Debug\Poker.pdb
+D:\SOME TEST REPO 2\testRepo\Poker\bin\Debug\Poker.exe.config
+D:\SOME TEST REPO 2\testRepo\Poker\obj\Debug\Poker.exe
+D:\SOME TEST REPO 2\testRepo\Poker\obj\Debug\Poker.pdb
