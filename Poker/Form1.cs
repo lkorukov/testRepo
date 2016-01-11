@@ -22,6 +22,7 @@ namespace Poker
         public static void SomeMethod()
         {
             Console.WriteLine("BLalalalblabalba");
+            System.Console.WriteLine("Added a line from second 2");
         }
 
         public Form1()
@@ -65,6 +66,11 @@ namespace Poker
             bBB.Visible = false;
             bSB.Visible = false;
             tbRaise.Text = (bb * 2).ToString();
+        }
+
+        public void MEthodAddedByFrom2By2()
+        {
+            
         }
         async Task Shuffle()
         {
