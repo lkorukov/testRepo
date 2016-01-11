@@ -52,6 +52,7 @@
     </Compile>
     <Compile Include="ExtractedClasFirst.cs" />
     <Compile Include="ExtractedSecondClassFirst.cs" />
+    <Compile Include="ExtractedThirdClassFirst.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

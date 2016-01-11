@@ -207,5 +207,10 @@ namespace Poker
                 restart = false;
             }
         }
+
+        void MethodFrom2()
+        {
+            System.Console.WriteLine("sfdsadsad");
+        }
     }
 }
